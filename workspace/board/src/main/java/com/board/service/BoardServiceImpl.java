@@ -29,4 +29,10 @@ public void write(BoardVO vo) throws Exception {
 	
 }
 
+@Override
+public BoardVO view(int bno) throws Exception {
+	// TODO Auto-generated method stub
+	return dao.view(bno);
+}
+
 }
