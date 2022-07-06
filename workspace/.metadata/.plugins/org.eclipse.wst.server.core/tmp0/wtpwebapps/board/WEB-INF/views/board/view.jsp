@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>게시물 조회</title>
+<h2><title>게시물 조회</title></h2>
 </head>
 <body>
 <!-- 메뉴 include -->
@@ -15,16 +15,16 @@
 <form method="post">
 
 <label>제목</label>
-${view.title}<br />
+${view.title}<br /><hr>
 
 <label>작성자</label>
-${view.writer}<br />
+${view.writer}<br /><hr>
 
 <label>내용</label><br />
-${view.content}<br />
+${view.content}<br /><hr>
 
 <div>
-<a href="/board/modify?bno=${view.bno}">게시물 수정</a>
+<a href="/board/modify?bno=${view.bno}">게시물 수정</a>,<a href="/board/delete?bno=${view.bno}">게시물 삭제</a>
 </div>
 
 </form>
