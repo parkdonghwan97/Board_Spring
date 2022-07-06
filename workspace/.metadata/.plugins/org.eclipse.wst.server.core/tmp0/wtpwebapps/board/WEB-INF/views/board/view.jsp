@@ -18,11 +18,9 @@ ${view.writer}<br />
 <label>내용</label><br />
 ${view.content}<br />
 
-
-
-
-<!-- <button type="submit">작성</button> -->
-
+<div>
+<a href="/board/modify?bno=${view.bno}">게시물 수정</a>
+</div>
 
 </form>
 
