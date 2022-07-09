@@ -1,5 +1,6 @@
 package com.board.service;
 
+import java.util.HashMap;
 import java.util.List;
 
 import javax.inject.Inject;
@@ -59,5 +60,21 @@ public int count() throws Exception {
 public List<BoardVO> listPage(int displayPost, int postNum) throws Exception {
 	return dao.listPage(displayPost, postNum);
 }
+
+//게시물 목록 + 페이징 + 검색
+@Override
+public List<BoardVO> listPageSearch(
+int displayPost, int postNum, String searchType, String keyword) throws Exception {
+	return  dao.listPageSearch(displayPost, postNum, searchType, keyword);
+}
+
+//게시물 총 개수 + 검색 적용
+@Override
+public int searchCount(String searchType, String keyword) throws Exception {
+	
+	return dao.searchCount(searchType, keyword);
+}
+
+
 
 }
