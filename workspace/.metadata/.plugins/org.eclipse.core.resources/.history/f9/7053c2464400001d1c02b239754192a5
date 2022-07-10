@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.board.mappers.reply">
+
+<!-- 댓글 조회, 작성, 수정, 삭제에 맞는 쿼리문을 매퍼에 추가
+- 댓글 조회는 게시물 번호(bno)만 이용하여 조회, 결과는 ReplyVO형태로 반환됨.
+→ 파라미터 타입은 정수형이며 ResultType은 ReplyVO이다.
+
+- 댓글 작성/수정/삭제는 게시물번호와 댓글번호가 모두 필요.
+작성자, 댓글 내용, 작성 날짜가 필요하며 반환되는 데이터는 없다.
+→파라미터 타입은 ReplyVO, ResultType은 없음. -->
+
+
+
+	<!-- 댓글 조회 -->
+	<select id="replyList" parameterType="int" resultType="com.board.domain.ReplyVO">
+		select
+			rno,bno,writer,content,regDate
+		from tbl_reply
+		where bno = #{bno}
+	
+	</select>
+	
+	<!-- 댓글 작성 -->
+	<insert id="replyWrite" parameterType="com.board.domain.ReplyVO">
+	insert into tbl_reply(bno,writer,content,regDate)
+	value(#{bno},#{writer},#{content},#{regDate})
+	</insert>
+	
+	<!-- 댓글 수정 -->
+	<update id="replyUpdate" parameterType="com.board.domain.ReplyVO">
+	update tbl_reply set
+		writer = #{writer},
+		content = #{content}
+	where rno = #{rno} and bno = #{bno}
+	
+	</update>
+	
+	<!-- 댓글 삭제 -->
+	<delete id="replyWrite" parameterType="com.board.domain.ReplyVO">
+	delete from tbl_reply
+	where rno = #{rno} and bno = #{bno}
+	
+	</delete>
+	
+
+	
+
+</mapper>

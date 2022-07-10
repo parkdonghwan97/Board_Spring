@@ -148,3 +148,15 @@
 0:0:0:0:0:0:0:1 - - [09/Jul/2022:21:51:01 +0900] "GET /favicon.ico HTTP/1.1" 404 721
 0:0:0:0:0:0:0:1 - - [09/Jul/2022:21:51:06 +0900] "GET / HTTP/1.1" 404 721
 0:0:0:0:0:0:0:1 - - [09/Jul/2022:21:51:06 +0900] "GET /favicon.ico HTTP/1.1" 404 721
+127.0.0.1 - - [09/Jul/2022:21:51:34 +0900] "GET / HTTP/1.1" 200 283
+0:0:0:0:0:0:0:1 - - [09/Jul/2022:21:51:35 +0900] "GET / HTTP/1.1" 200 283
+0:0:0:0:0:0:0:1 - - [09/Jul/2022:21:51:35 +0900] "GET /favicon.ico HTTP/1.1" 404 721
+0:0:0:0:0:0:0:1 - - [09/Jul/2022:21:51:45 +0900] "GET /board/list HTTP/1.1" 200 257326
+0:0:0:0:0:0:0:1 - - [09/Jul/2022:21:51:46 +0900] "GET /board/listPageSearch?num=1 HTTP/1.1" 200 4476
+0:0:0:0:0:0:0:1 - - [09/Jul/2022:21:51:54 +0900] "GET /board/listPageSearch?num=1&searchType=writer&keyword=%EC%88%98%EC%A0%95%EB%B3%B8 HTTP/1.1" 200 4981
+0:0:0:0:0:0:0:1 - - [09/Jul/2022:21:51:56 +0900] "GET /board/listPageSearch?num=8&searchType=writer&keyword=%EC%88%98%EC%A0%95%EB%B3%B8 HTTP/1.1" 200 4981
+0:0:0:0:0:0:0:1 - - [09/Jul/2022:21:51:57 +0900] "GET /board/listPageSearch?num=4&searchType=writer&keyword=%EC%88%98%EC%A0%95%EB%B3%B8 HTTP/1.1" 200 4981
+0:0:0:0:0:0:0:1 - - [09/Jul/2022:21:51:57 +0900] "GET /board/listPageSearch?num=11&searchType=writer&keyword=%EC%88%98%EC%A0%95%EB%B3%B8 HTTP/1.1" 200 5105
+0:0:0:0:0:0:0:1 - - [09/Jul/2022:21:51:58 +0900] "GET /board/listPageSearch?num=13&searchType=writer&keyword=%EC%88%98%EC%A0%95%EB%B3%B8 HTTP/1.1" 200 5101
+0:0:0:0:0:0:0:1 - - [09/Jul/2022:21:51:58 +0900] "GET /board/listPageSearch?num=18&searchType=writer&keyword=%EC%88%98%EC%A0%95%EB%B3%B8 HTTP/1.1" 200 5085
+0:0:0:0:0:0:0:1 - - [09/Jul/2022:21:51:58 +0900] "GET /board/listPageSearch?num=19&searchType=writer&keyword=%EC%88%98%EC%A0%95%EB%B3%B8 HTTP/1.1" 200 5085
