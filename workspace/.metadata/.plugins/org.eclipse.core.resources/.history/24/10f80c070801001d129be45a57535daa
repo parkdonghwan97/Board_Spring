@@ -19,13 +19,13 @@ public class ReplyController {
 	
 	//댓글 조회
 	
-	// 댓글 작성
-	@RequestMapping(value = "/write", method = RequestMethod.POST)
-	public String posttWirte(ReplyVO vo) throws Exception {
+	//댓글 작성
+	@RequestMapping(value="/write",method = RequestMethod.POST)
+	public String posttWrite(ReplyVO vo) throws Exception{
 		
 		replyService.write(vo);
+		return "redirectL/board/view?bno="+ vo.getBno();
 		
-		return "redirect:/board/view?bno=" + vo.getBno();
 	}
 	
 	//댓글 수정
